@@ -58,11 +58,12 @@
         // bind some event listeners to the scroll.
 
         if (("standalone" in window.navigator) && !window.navigator.standalone){
-            Instalada.show();
-            SinInstalar.hide();
-        } else {
             Instalada.hide();
             SinInstalar.show();
+            appModeNote.show();
+        } else {
+            Instalada.show();
+            SinInstalar.hide();
         }
 
 
