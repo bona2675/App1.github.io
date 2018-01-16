@@ -54,9 +54,7 @@
         // it is not, then we want to show the app mode note and
         // bind some event listeners to the scroll.
         if (
-            ("standalone" in window.navigator) &&
-            !window.navigator.standalone
-            ){
+            ("standalone" in window.navigator) && !window.navigator.standalone){
             // This user is running in a "full screen ready"
             // device, but is NOT using the full screen mode.
             // Show the note about full screen.
@@ -106,7 +104,7 @@
    
     <h1>
         Detecting iPhone's App Mode (Full Screen Mode)
-        V2
+        V3
     </h1>
 
     <p>
